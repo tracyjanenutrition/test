@@ -1,4 +1,10 @@
 
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
 .intro {
   width: 30%;
   margin: auto;

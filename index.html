@@ -1,27 +1,339 @@
-
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+
   <title>Tracy Jane Nutrition</title>
 
-<link rel="stylesheet" href="styles.css">
+  <!-- Mobile Responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
 
-<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/29b99836e4.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <p class="intro">
-Hi, I’m Tracy Jane. I’m a Registered Dietitian and my practice focuses on helping people develop healthier relationships with food, and nutritionally managing chronic conditions. 
-  <br>
-If you feel stressed about eating right for your digestive health or endocrine disorder; nutrition counselling can make all the difference in providing clarity, direction and optimal health.
-  <br>
-  I help my clients feel better and take control of their health through food and nutrition, via in-person or online counselling. Together, we will create a personalized action plan with supporting resources to meet your goals. By the end of our sessions, you will feel more confident in managing your symptoms, developing healthier eating habits and overall improving your wellbeing.
-  </p>
-  
-<img src="background 4.png" style="width:300px;">
+  <section class="title-section" id="title">
 
-  </body>
-  </html>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/tracy jane logo transparent.png" width="150" alt=""></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services-and-fees.html">Prices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="container-fluid">
+
+      <h1 class="welcome-sign">Welcome</h1>
+
+      <img class="title-image" src="images/fruit basket icon.png" alt="fruit-basket">
+
+      <h3>Tracy Jane Nutrition</h3>
+      <h4> Reistered Dietitian Services</h4>
+    </div>
+
+  </section>
+
+  <section id="bio">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-lg-6">
+          <img src="images/circle headshot.png" alt="tj-img" style="padding-bottom:30px;width:300px;">
+        </div>
+
+        <div class="col-lg-6">
+          <h1 class="big-heading">Hello</h1>
+          <p> Hi, I’m Tracy Jane. I’m a Registered Dietitian and my practice focuses on helping people develop healthier relationships with food, and nutritionally managing chronic conditions.
+          </p>
+          <p>If you feel stressed about eating right for your digestive health, endocrine disorder, weight-management or general well-being; nutrition counselling can make all the difference in providing clarity and direction for better health.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="services-section" id="services">
+    <div class="container-fluid">
+      <div class="skills">
+        <h1>Services</h1>
+        <p>
+          I help my clients feel better and take control of their health through food and nutrition, via in-person or virtual counselling. By the end of our sessions, you will feel more confident in managing your symptoms, developing healthier
+          eating
+          habits and overall improving your wellbeing.
+        </p>
+
+        <div class="skill-row">
+          <img class="service-icon" src="images/white stomach.png" alt="digestive-img" style="width:100px;height:100px;">
+          <h3>Digestive Health</h3>
+          <p>Start planning your life around your values instead of your bathroom schedule or painful indigestion. Digestive conditions like <strong>Irritable Bowel Syndrome (IBS), Inflammatory Bowel Disease (Crohn’s, Colitis), acid reflux, gas,
+              abdominal pain, bloating, diarrhea, and constipation</strong> get in the way of fulfilling your potential and responsibilities. Nutrition management strategies could help relieve your symptoms so that you look forward to every meal
+            instead of fearing the consequences. </p>
+        </div>
+        <div class="skill-row">
+          <img class="service-icon" src="images/white ovaries.png" alt="woman-img" style="width:100px;height:100px;">
+          <h3>Women's Health</h3>
+          <p>Confused about how to manage a diagnosis like <strong>Polycystic Ovary Syndrome (PCOS)</strong>? You’re not alone. You may not get all the information you need for dietary changes once you leave your doctor’s office. Nutrition
+            counselling helps you turn recommendations into actions, and see noticeable improvements.</p>
+        </div>
+        <div class="skill-row">
+          <img class="service-icon" src="images/white apple heart.png" alt="apple-img" style="width:100px;height:100px;">
+          <h3>Healthy Habits</h3>
+          <p>Want to improve your relationship with food? We will work together to help meet your health goals and create nourishing eating habits that make you feel better, mentally and physically. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section" id="testimonials">
+
+    <section>
+
+
+      <div id="testimonial-carousel" class="carousel slide container-fluid " data-ride="false">
+        <h1 class="testimonial-header"> Client Experiences</h1>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>Very friendly, quick to reply and get an appointment with. Very realistic and no judgement way of approaching nutrition!</p>
+            <em><strong> - Women's Health</strong></em>
+
+          </div>
+
+          <div class="carousel-item">
+            <p class="testimonial-text">I came to see Tracy Jane because I had been dealing with chronic stomach issues that came up after having a cholecystectomy. Tracy Jane guided me through a program that fully eliminated my symptoms, and helped
+              me navigate new food restrictions in a clear and thoughtful way. She is knowledgeable, resourceful, and truly cares about the wellbeing of her clients.</p>
+            <em><strong> - Low-FODMAP Diet for IBS</strong></em>
+          </div>
+
+          <div class="carousel-item">
+            <p class="testimonial-text">I’m grateful for the increased awareness of food choices as a result of your work and will continue to implement good habits. Thank you for laying out everything so clearly. You listened and acted efficiently
+              to bring me to a better place to ensure I have improved health going forward and I truly appreciate that.</p>
+
+            <em><strong> - Healthy and Intuitive Eating</strong></em>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+  </section>
+
+
+
+  <section class="prices-section" id="prices">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <div class="price-sec-wrap">
+      <div class="container-fluid">
+        <h1>Invest in Your Health</h1>
+        <p>
+          Nutrition counselling by a registered dietitian is covered by many private insurance plans. Click here to see if your plan allows for direct billing.
+        </p>
+
+        <div class="row">
+          <div class="main-heading"></div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="price-box">
+              <div class="">
+                <div class="price-label basic">Pay-Per-Session</div>
+                <div class="price">$ 125.00</div>
+                <div class="price-info">
+                  <strong>1st Session:</strong>
+                  Initial Assessment
+                  (60 minutes)
+                </div>
+              </div>
+              <div class="info">
+                <ul>
+                  <li><i class="fas fa-check"></i>Comprehensive review of medical history, lifestyle and food intake</li>
+                  <li><i class="fas fa-check"></i>Careful evaluation of health and habits</li>
+                  <li><i class="fas fa-check"></i>Goal setting, and creating a personalized action plan</li>
+                  <li><i class="fas fa-check"></i>Price per 30-minute Follow-up: $90.00</li>
+                </ul>
+                <a href="#" class="plan-btn">Book now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="price-box">
+              <div class="">
+                <div class="price-label value">Mini-Package</div>
+                <div class="price">$ 250.00</div>
+                <div class="price-info">
+                  <strong>3 Sessions:</strong>
+                  1 Initial Assessment
+                  + 2 Follow-ups
+                </div>
+              </div>
+              <div class="info">
+                <ul>
+                  <li><i class="fas fa-check"></i>Guidance for a nutrition management strategy</li>
+                  <li><i class="fas fa-check"></i><strong>Estimated time span:</strong> 2-3 months (flexible)</li>
+                  <li><i class="fas fa-check"></i><strong>Best suited for:</strong> individuals in general good health with mild-moderate symptoms or conditions, and no anticipted health complications </li>
+
+                </ul>
+                <a href="#" class="plan-btn">Book now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="price-box">
+              <div class="">
+                <div class="price-label premium">Full-Package</div>
+                <div class="price">$ 475.00</div>
+                <div class="price-info">
+                  <strong>6 Sessions:</strong>
+                  1 Initial Assessment
+                  + 6 Follow-ups
+                </div>
+              </div>
+              <div class="info">
+                <ul>
+                  <li><i class="fas fa-check"></i><strong>Additional focus on:</strong> establishing long-term, sustainable habits</li>
+                  <li><i class="fas fa-check"></i><strong>Estimated time span:</strong> 4-6 months (flexible)</li>
+                  <li><i class="fas fa-check"></i><strong>Best suited for:</strong> individuals or couples with moderate-severe symptoms & conditions, commitment to improving health with greater support </li>
+
+                </ul>
+                <a href="#" class="plan-btn">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        Not sure which package is best for you? Click here to learn more details about my services and fees, or call/email to schedule a complimentary pre-assessment phone consult.
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cta" id="call-to-action">
+
+    <div class="container-fluid">
+      <h1>Get in Touch</h1>
+      <p>[book online] button
+      </p>
+      <p>
+        Call or Email for bookings & inquiries
+      </p>
+      <p>Schedule a FREE 15-minute consultation< (button to online booking/contact page)</p> </div> </section> <section class="py-5">
+
+
+          <div class="container-fluid">
+            <h1 class="blog-heading">Latest from the blog</h1>
+            <div class="row">
+              <div class="col-md-4">
+                <img alt="1" class="blg" src="https://images.pexels.com/photos/1078741/pexels-photo-1078741.jpeg?cs=srgb&dl=two-women-in-white-hijab-veils-1078741.jpg&fm=jpg">
+                <h2>post 1</h2>
+                <p>If you have any question please do not hesitate to drop us an email.</p>
+                <a href="#" class="text-danger">Read on</a>
+              </div>
+              <div class="col-md-4">
+                <img alt="2" class="blg" src="https://images.pexels.com/photos/1181597/pexels-photo-1181597.jpeg?cs=srgb&dl=sitting-woman-while-reading-books-near-table-1181597.jpg&fm=jpg">
+                <h2>post 2</h2>
+                <p>We help with product demo and let you experience the whole new world of technology.</p>
+                <a href="#" class="text-danger">Read on</a>
+              </div>
+              <div class="col-md-4">
+                <img alt="3" class="blg" src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?cs=srgb&dl=person-holding-silver-iphone-7-887751.jpg&fm=jpg">
+                <h2>post 3</h2>
+                <p>Our team is trying all possible ways to assist you with our services.</p>
+                <a href="#" class="text-danger">Read on</a>
+              </div>
+            </div>
+          </div>
+
+  </section>
+
+
+  <section id="footer">
+    <section class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>subscribe</h2>
+            <p>mailing list</p>
+          </div>
+          <div class="col-md-4">
+            <h2>instagram</h2>
+            <p>feed preview</p>
+            <div id="pixlee_container"></div>
+            <script type="text/javascript">
+              window.PixleeAsyncInit = function() {
+                Pixlee.init({
+                  apiKey: 'Q7DFcq_57fq4lkH-Dzv1'
+                });
+                Pixlee.addSimpleWidget({
+                  widgetId: '27920'
+                });
+              };
+            </script>
+            <script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+          </div>
+          <div class="col-md-4">
+            <h2>contact</h2>
+            <p>phone and email</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </section>
+
+
+</body>
+
+</html>

@@ -97,31 +97,40 @@
       <div class="skills">
         <h1>Services</h1>
         <p>
-          I help my clients feel better and take control of their health through food and nutrition, via in-person or virtual counselling. By the end of our sessions, you will feel more confident in managing your symptoms, developing healthier
-          eating
-          habits and overall improving your wellbeing.
+          I help my clients feel better and take control of their health through food and nutrition. By the end of our sessions, you will feel more confident in managing your symptoms, developing healthier
+          eating habits and overall improving your wellbeing.
         </p>
+        <div class="playground">
+          <h3>
+            <span class="service-heading switchy-tab" data-section-id="digestive-health"> Digestive Health </span>
 
-        <div class="skill-row">
+          </h3>
+          <h3>
+            <span class="service-heading switchy-tab" data-section-id="womens-health"> Women's Health </span>
+
+          </h3>
+          <h3>
+            <span class="service-heading switchy-tab" data-section-id="healthy-habits"> Healthy Habits </span>
+
+          </h3>
+        </div>
+        <div class="skill-row tab-section active" id="digestive-health">
           <img class="service-icon" src="images/white stomach.png" alt="digestive-img" style="width:100px;height:100px;">
-          <h3>Digestive Health</h3>
           <p>Start planning your life around your values instead of your bathroom schedule or painful indigestion. Digestive conditions like <strong>Irritable Bowel Syndrome (IBS), Inflammatory Bowel Disease (Crohn’s, Colitis), acid reflux, gas,
               abdominal pain, bloating, diarrhea, and constipation</strong> get in the way of fulfilling your potential and responsibilities. Nutrition management strategies could help relieve your symptoms so that you look forward to every meal
             instead of fearing the consequences. </p>
         </div>
-        <div class="skill-row">
+
+        <div class="skill-row tab-section" id="womens-health">
           <img class="service-icon" src="images/white ovaries.png" alt="woman-img" style="width:100px;height:100px;">
-          <h3>Women's Health</h3>
           <p>Confused about how to manage a diagnosis like <strong>Polycystic Ovary Syndrome (PCOS)</strong>? You’re not alone. You may not get all the information you need for dietary changes once you leave your doctor’s office. Nutrition
             counselling helps you turn recommendations into actions, and see noticeable improvements.</p>
         </div>
-        <div class="skill-row">
+        <div class="skill-row tab-section" id="healthy-habits">
           <img class="service-icon" src="images/white apple heart.png" alt="apple-img" style="width:100px;height:100px;">
-          <h3>Healthy Habits</h3>
           <p>Want to improve your relationship with food? We will work together to help meet your health goals and create nourishing eating habits that make you feel better, mentally and physically. </p>
         </div>
-      </div>
-    </div>
+
   </section>
 
   <section class="testimonials-section" id="testimonials">
@@ -268,33 +277,33 @@
       </p>
 
     </div>
-    </section>
-      <section class="py-5">
+  </section>
+  <section class="py-5">
 
 
-          <div class="container-fluid">
-            <h1 class="blog-heading">Latest from the blog</h1>
-            <div class="row">
-              <div class="col-md-4">
-                <img alt="1" class="blg" src="https://images.pexels.com/photos/1078741/pexels-photo-1078741.jpeg?cs=srgb&dl=two-women-in-white-hijab-veils-1078741.jpg&fm=jpg">
-                <h2>Cilantro</h2>
-                <p>If you have any question please do not hesitate to drop us an email.</p>
-                <a href="blog/cilantro.html" class="text-danger">Read on</a>
-              </div>
-              <div class="col-md-4">
-                <img alt="2" class="blg" src="https://images.pexels.com/photos/1181597/pexels-photo-1181597.jpeg?cs=srgb&dl=sitting-woman-while-reading-books-near-table-1181597.jpg&fm=jpg">
-                <h2>post 2</h2>
-                <p>We help with product demo and let you experience the whole new world of technology.</p>
-                <a href="#" class="text-danger">Read on</a>
-              </div>
-              <div class="col-md-4">
-                <img alt="3" class="blg" src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?cs=srgb&dl=person-holding-silver-iphone-7-887751.jpg&fm=jpg">
-                <h2>post 3</h2>
-                <p>Our team is trying all possible ways to assist you with our services.</p>
-                <a href="#" class="text-danger">Read on</a>
-              </div>
-            </div>
-          </div>
+    <div class="container-fluid">
+      <h1 class="blog-heading">Latest from the blog</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <img alt="1" class="blg" src="https://images.pexels.com/photos/1078741/pexels-photo-1078741.jpeg?cs=srgb&dl=two-women-in-white-hijab-veils-1078741.jpg&fm=jpg">
+          <h2>Cilantro</h2>
+          <p>If you have any question please do not hesitate to drop us an email.</p>
+          <a href="blog/cilantro.html" class="text-danger">Read on</a>
+        </div>
+        <div class="col-md-4">
+          <img alt="2" class="blg" src="https://images.pexels.com/photos/1181597/pexels-photo-1181597.jpeg?cs=srgb&dl=sitting-woman-while-reading-books-near-table-1181597.jpg&fm=jpg">
+          <h2>post 2</h2>
+          <p>We help with product demo and let you experience the whole new world of technology.</p>
+          <a href="#" class="text-danger">Read on</a>
+        </div>
+        <div class="col-md-4">
+          <img alt="3" class="blg" src="https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?cs=srgb&dl=person-holding-silver-iphone-7-887751.jpg&fm=jpg">
+          <h2>post 3</h2>
+          <p>Our team is trying all possible ways to assist you with our services.</p>
+          <a href="#" class="text-danger">Read on</a>
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -333,7 +342,16 @@
     </section>
   </section>
 
-
+  <script>
+    document.querySelectorAll('.switchy-tab').forEach(function(tab) {
+        tab.onclick = function(e) {
+            document.querySelectorAll('.tab-section').forEach(function(section) {
+                section.classList.remove('active')
+              })
+            document.getElementById(e.currentTarget.dataset.sectionId).classList.add('active')
+          }
+      })
+  </script>
 </body>
 
 </html>

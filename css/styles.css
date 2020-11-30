@@ -31,6 +31,21 @@ p {
   text-align: center;
 }
 
+.playground {
+  display: flex;
+}
+.playground h3 {
+  flex: 1;
+  text-align: center;
+}
+.service-heading {
+  border-bottom: 0.15em solid black;
+}
+
+.service-descriptions {
+  background-color: #FBE9E7;
+}
+
 .welcome-sign {
   font-family: 'Sacramento', cursive;
   font-size: 5em;
@@ -57,6 +72,11 @@ p {
 .skill-row {
   margin: 50px auto 50px auto;
   text-align: left;
+  display: none;
+}
+
+.skill-row.active {
+  display: block;
 }
 
 .footer {

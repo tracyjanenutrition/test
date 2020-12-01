@@ -28,6 +28,11 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- JavaScripts -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -100,33 +105,35 @@
           I help my clients feel better and take control of their health through food and nutrition. By the end of our sessions, you will feel more confident in managing your symptoms, developing healthier
           eating habits and overall improving your wellbeing.
         </p>
+
+
         <div class="playground">
-          <h3>
-            <span class="service-heading switchy-tab" data-section-id="digestive-health"> Digestive Health </span>
+          <h3 class="service-heading switchy-tab active" data-section-id="digestive-health">
+            <span> Digestive Health </span>
 
           </h3>
-          <h3>
-            <span class="service-heading switchy-tab" data-section-id="womens-health"> Women's Health </span>
+          <h3 class="service-heading switchy-tab" data-section-id="womens-health">
+            <span > Women's Health </span>
 
           </h3>
-          <h3>
-            <span class="service-heading switchy-tab" data-section-id="healthy-habits"> Healthy Habits </span>
+          <h3 class="service-heading switchy-tab" data-section-id="healthy-habits">
+            <span> Healthy Habits </span>
 
           </h3>
         </div>
-        <div class="skill-row tab-section active" id="digestive-health">
+        <div class="skill-row switchy-section active" id="digestive-health">
           <img class="service-icon" src="images/white stomach.png" alt="digestive-img" style="width:100px;height:100px;">
           <p>Start planning your life around your values instead of your bathroom schedule or painful indigestion. Digestive conditions like <strong>Irritable Bowel Syndrome (IBS), Inflammatory Bowel Disease (Crohn’s, Colitis), acid reflux, gas,
               abdominal pain, bloating, diarrhea, and constipation</strong> get in the way of fulfilling your potential and responsibilities. Nutrition management strategies could help relieve your symptoms so that you look forward to every meal
             instead of fearing the consequences. </p>
         </div>
 
-        <div class="skill-row tab-section" id="womens-health">
+        <div class="skill-row switchy-section" id="womens-health">
           <img class="service-icon" src="images/white ovaries.png" alt="woman-img" style="width:100px;height:100px;">
           <p>Confused about how to manage a diagnosis like <strong>Polycystic Ovary Syndrome (PCOS)</strong>? You’re not alone. You may not get all the information you need for dietary changes once you leave your doctor’s office. Nutrition
             counselling helps you turn recommendations into actions, and see noticeable improvements.</p>
         </div>
-        <div class="skill-row tab-section" id="healthy-habits">
+        <div class="skill-row switchy-section" id="healthy-habits">
           <img class="service-icon" src="images/white apple heart.png" alt="apple-img" style="width:100px;height:100px;">
           <p>Want to improve your relationship with food? We will work together to help meet your health goals and create nourishing eating habits that make you feel better, mentally and physically. </p>
         </div>
@@ -343,15 +350,21 @@
   </section>
 
   <script>
-    document.querySelectorAll('.switchy-tab').forEach(function(tab) {
-        tab.onclick = function(e) {
-            document.querySelectorAll('.tab-section').forEach(function(section) {
-                section.classList.remove('active')
-              })
-            document.getElementById(e.currentTarget.dataset.sectionId).classList.add('active')
-          }
-      })
-  </script>
+document.querySelectorAll('.switchy-tab').forEach(function(tab) {
+    if (tab.dataset.sectionId) {
+      tab.onclick = function(e) {
+          document.querySelectorAll('.switchy-tab').forEach(function(section) {
+            section.classList.remove('active')
+            tab.classList.add('active')
+          })
+          document.querySelectorAll('.switchy-section').forEach(function(section) {
+            section.classList.remove('active')
+          })
+          document.getElementById(e.currentTarget.dataset.sectionId).classList.add('active')
+      }
+    }
+  })
+</script>
 </body>
 
 </html>

@@ -78,6 +78,33 @@ p {
 .skill-row.active {
   display: block;
 }
+.service-heading {
+  border: none;
+  cursor: pointer;
+  padding: 1em;
+  background-color: white;
+  position: relative;
+
+}
+.service-heading:hover {
+  background-color: #cdcdcd;
+}
+.service-heading.active {
+  border-bottom: 2px solid black;
+}
+.service-heading.active:before {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+}
 
 .footer {
   background-color: #3F3437;
